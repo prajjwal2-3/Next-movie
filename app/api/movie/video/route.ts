@@ -5,7 +5,7 @@ export async function GET(req: NextRequest) {
     const id = req.headers
     const options = {
         method: 'GET',
-        url: `https://api.themoviedb.org/3/movie/${id}/videos`,
+        url: `https://api.themoviedb.org/3/movie/${823464}/videos`,
         params: {
             include_video:'true',
             language: 'en-US', 
