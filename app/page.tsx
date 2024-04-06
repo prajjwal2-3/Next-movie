@@ -7,7 +7,7 @@ import Maincon from "@/components/Maincon";
 import Moviecard from "@/components/Moviecard";
 async function getnomplaying() {
   try {
-    const response = await axios.get("http://localhost:3000/api/movie/nowplaying");
+    const response = await axios.get("https://next-movie-ruby.vercel.app/api/movie/nowplaying");
     return response.data;
   } catch (e) {
     console.log(e);
@@ -16,7 +16,7 @@ async function getnomplaying() {
 }
 async function getpopular() {
   try {
-    const response = await axios.get("http://localhost:3000/api/movie/popular");
+    const response = await axios.get("https://next-movie-ruby.vercel.app/api/movie/popular");
     return response.data;
   } catch (e) {
     console.log(e);
@@ -25,7 +25,7 @@ async function getpopular() {
 }
 async function gettoprated() {
   try {
-    const response = await axios.get("http://localhost:3000/api/movie/toprated");
+    const response = await axios.get("https://next-movie-ruby.vercel.app/api/movie/toprated");
     return response.data;
   } catch (e) {
     console.log(e);
@@ -34,7 +34,7 @@ async function gettoprated() {
 }
 async function getupcoming() {
   try {
-    const response = await axios.get("http://localhost:3000/api/movie/upcoming");
+    const response = await axios.get("https://next-movie-ruby.vercel.app/api/movie/upcoming");
     return response.data;
   } catch (e) {
     console.log(e);
