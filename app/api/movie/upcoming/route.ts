@@ -4,7 +4,7 @@ import axios from 'axios';
 export async function GET(req: NextRequest) {
     const options = {
         method: 'GET',
-        url: 'https://api.themoviedb.org/3/movie/top_rated',
+        url: 'https://api.themoviedb.org/3/movie/upcoming',
         params: {
             include_video:'true',
             language: 'en-US', 

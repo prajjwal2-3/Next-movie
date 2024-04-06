@@ -23,7 +23,7 @@ const Moviecard = ({ movie }: { movie: any }) => {
           <button className="bg-white sm:m-2 w-10/12 mx-1 sm:px-6 sm:py-3 px-2 py-1 rounded-md text-black shadow-md on hover:opacity-75 ">▶️ Watch Now</button>
      <button className="bg-gray-500 sm:m-2 w-2/12  rounded-md opacity-65 on hover:opacity-75  shadow-md text-xl text-white">➕</button>
           </div>
-          <div className=" text-white/80 text-left flex px-1 overflow-hidden text-ellipsis">
+          <div className=" text-white/80 text-left flex  p-3 overflow-hidden text-ellipsis">
             {movie.overview}
           </div>
         </div>
