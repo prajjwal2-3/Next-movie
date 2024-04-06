@@ -94,30 +94,30 @@ export default function Home() {
       
         
           <Maincon/>
-          <div className="-mt-48 flex flex-col z-20 ">
+          <div className="sm:-mt-48 flex flex-col z-20 ">
           
-            <div className="flex  p-12  overflow-x-scroll overflow-y-hidden h-auto">
+            <div className="flex  sm:py-12 py-11 sm:mb-0 px-4 overflow-x-scroll overflow-y-hidden ">
               
             {nowplaying && nowplaying.map((movies: any, index: number) => (
              <Moviecard key={index} movie={movies}/>
             ))}
             </div>
-            <div className="text-white font-bold text-xl pl-12 ">Popular</div>
-            <div className="flex  p-12  overflow-x-scroll overflow-y-hidden h-auto">
+            <div className="text-white font-bold text-xl px-4 ">Popular</div>
+            <div className="flex px-4 py-12  overflow-x-scroll overflow-y-hidden h-auto">
               
             {popular && popular.map((movies: any, index: number) => (
              <Moviecard key={index} movie={movies}/>
             ))}
             </div>
-            <div className="text-white font-bold text-xl pl-12 ">Top rated</div>
-            <div className="flex  p-12  overflow-x-scroll overflow-y-hidden h-auto">
+            <div className="text-white font-bold text-xl px-4 ">Top rated</div>
+            <div className="flex px-4  py-12  overflow-x-scroll overflow-y-hidden h-auto">
               
             {toprated && toprated.map((movies: any, index: number) => (
              <Moviecard key={index} movie={movies}/>
             ))}
             </div>
-            <div className="text-white font-bold text-xl pl-12 ">Top rated</div>
-            <div className="flex  p-12  overflow-x-scroll overflow-y-hidden h-auto">
+            <div className="text-white font-bold text-xl px-4">Top rated</div>
+            <div className="flex px-4 py-12  overflow-x-scroll overflow-y-hidden h-auto">
               
             {upcoming && upcoming.map((movies: any, index: number) => (
              <Moviecard key={index} movie={movies}/>

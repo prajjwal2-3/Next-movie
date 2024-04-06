@@ -15,7 +15,7 @@ export default async function Video() {
   );
   const id = videoid?.[0]?.key
   return (
-    <div className="relative -mt-28">
+    <div className="relative sm:-mt-28 -mt-7">
         <div className="absolute inset-0 bg-gradient-to-b from-black "></div>
       <iframe
        className="w-full aspect-video"
